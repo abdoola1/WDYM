@@ -22,7 +22,7 @@
 
             <ul class="panel">
                 <p class="panel-heading">
-                    My Hand
+                    My Hand possible location for game interface
                 </p>
                 <li v-for="(c, i) in My_Captions " :key="i" class="panel-block is-active">
                     {{c}}
@@ -35,31 +35,12 @@
                 <img    alt="Current Picture in Play" class="image is-fullwidth"
                         :src="game.Picture_In_Play" v-if="game.Picture_In_Play"  />
                 <div class="notification is-primary" v-else>
-                    Flip First Picture
+                    start
                 </div>
             </div>
         </div>
     </div>
-    <div class="columns">
-        <div class="column is-one-quarter">
-            
-            <ul class="panel">
-                <p class="panel-heading">
-                    Quotes maybe placed to side to allow for game screen
-                </p>
-                <li v-for="(p, i) in server.Caption_Deck " :key="i" class="panel-block is-active">
-                    <span class="panel-icon">
-                    <i class="fa fa-comments" aria-hidden="true"></i>
-                    </span>
-                    {{p.quote}}
-                </li>
-            </ul>
 
-        </div>
-        <div class="column">
-            3rd column
-        </div>
-    </div>
 </div>
 </template>
 
