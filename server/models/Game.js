@@ -1,6 +1,7 @@
 const Caption_Deck = require('./Captions');
 const { CustomError } = require('./CustomError');
 
+
 module.exports.Game = {
     Players: [
         { name: "Moshe", points: 0 },
