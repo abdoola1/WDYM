@@ -22,7 +22,7 @@
 
             <ul class="panel">
                 <p class="panel-heading">
-                    My Hand possible location for game interface
+                    My Hand
                 </p>
                 <li v-for="(c, i) in My_Captions " :key="i" class="panel-block is-active">
                     {{c}}
